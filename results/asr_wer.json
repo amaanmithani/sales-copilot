@@ -1,0 +1,52 @@
+{
+  "dataset": "openslr/librispeech_asr (clean/test/0000.parquet)",
+  "n_utterances": 200,
+  "audio_s": 1437.1,
+  "sample_seed": 0,
+  "normalizer": "lower-case, digits spelled out, punctuation stripped (see metrics.py)",
+  "machine": "Darwin arm64, 8 cores, shared",
+  "runs": [
+    {
+      "model": "tiny",
+      "backend": "faster-whisper-tiny-int8",
+      "beam_size": 1,
+      "cpu_threads": 4,
+      "wer": 0.0826,
+      "wer_ci95": {
+        "point": 0.0826,
+        "lo": 0.0682,
+        "hi": 0.0977
+      },
+      "errors": 320,
+      "ref_words": 3872,
+      "rtf": 0.0824,
+      "rtf_p50": 0.0879,
+      "rtf_p95": 0.2222,
+      "mean_decode_s": 0.5924,
+      "model_load_s": 48.28,
+      "loadavg_1m_start": 14.88,
+      "loadavg_1m_end": 11.8
+    },
+    {
+      "model": "base",
+      "backend": "faster-whisper-base-int8",
+      "beam_size": 1,
+      "cpu_threads": 4,
+      "wer": 0.0579,
+      "wer_ci95": {
+        "point": 0.0579,
+        "lo": 0.0462,
+        "hi": 0.0709
+      },
+      "errors": 224,
+      "ref_words": 3872,
+      "rtf": 0.1467,
+      "rtf_p50": 0.1644,
+      "rtf_p95": 0.3622,
+      "mean_decode_s": 1.0543,
+      "model_load_s": 0.72,
+      "loadavg_1m_start": 11.8,
+      "loadavg_1m_end": 12.54
+    }
+  ]
+}

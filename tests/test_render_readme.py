@@ -24,8 +24,8 @@ def test_splice_and_render() -> None:
     mod = load()
     body = mod.render()  # type: ignore[attr-defined]
     assert body.endswith("\n")
-    out = mod.splice("a\n<!-- RESULTS:START -->\nold\n<!-- RESULTS:END -->\nb", body)  # type: ignore[attr-defined]
-    assert "old" not in out and out.startswith("a\n") and out.endswith("b")
+    out = mod.splice("a\n<!-- RESULTS:START -->\nSTALE_BLOCK\n<!-- RESULTS:END -->\nb", body)  # type: ignore[attr-defined]
+    assert "STALE_BLOCK" not in out and out.startswith("a\n") and out.endswith("b")
     with pytest.raises(SystemExit):
         mod.splice("no markers", body)  # type: ignore[attr-defined]
 

@@ -1,0 +1,219 @@
+{
+  "audio": "SYNTHETIC: macOS `say` TTS, two voices per call, -60 dBFS hiss (see scripts)",
+  "calls": [
+    "call_a",
+    "call_b"
+  ],
+  "chunk_ms": 100,
+  "vad": "energy, -42 dBFS, 450 ms trailing silence",
+  "latency_definition": "wall time from capture of the last voiced sample to cue ready (endpoint wait + queueing + ASR + classify); excludes UI paint",
+  "machine": "Darwin arm64, 8 cores, shared",
+  "runs": [
+    {
+      "model": "tiny",
+      "backend": "faster-whisper-tiny-int8",
+      "classifier": "lr+all-MiniLM-L6-v2",
+      "audio_s": 158.4,
+      "streaming_rtf": 0.0915,
+      "segments": 35,
+      "e2e_all_segments": {
+        "n": 35,
+        "p50_ms": 767.8,
+        "p90_ms": 1329.7,
+        "max_ms": 3155.3,
+        "mean_ms": 954.8
+      },
+      "e2e_cue_segments": {
+        "n": 18,
+        "p50_ms": 753.1,
+        "p90_ms": 883.5,
+        "max_ms": 2459.5,
+        "mean_ms": 858.0
+      },
+      "breakdown_mean_ms": {
+        "endpoint_wait": 450.0,
+        "asr": 414.0,
+        "classify": 35.1
+      },
+      "call_wer": 0.0633,
+      "call_wer_errors_words": [
+        25,
+        395
+      ],
+      "turn_cues_on_asr": {
+        "tp": 16,
+        "fp": 13,
+        "fn": 1,
+        "precision": 0.5517,
+        "recall": 0.9412,
+        "f1": 0.6957
+      },
+      "turn_cues_on_gold_text": {
+        "tp": 15,
+        "fp": 13,
+        "fn": 2,
+        "precision": 0.5357,
+        "recall": 0.8824,
+        "f1": 0.6667
+      },
+      "loadavg_1m_start": 3.07,
+      "loadavg_1m_end": 6.01,
+      "calls": {
+        "call_a": {
+          "audio_s": 88.2,
+          "segments": 19,
+          "gold_turns": 19,
+          "cards": 11,
+          "transcript": [
+            "Hi Priyaya, thanks for making time today. How's the week going?",
+            "Pretty hectic, but good, we just wrapped our quarterly tip off.",
+            "Nice, to start, can you tell me how your team reviews sales calls today?",
+            "Our managers listen to a handful of recordings each week, mostly in the car.",
+            "A few of the reps also used Gong at their previous company.",
+            "Got it, and what happens after a call ends?",
+            "Bonnously the Reps tight notes into the CRM and that has been working fine for us.",
+            "That makes sense. Let me show you what the live cue cards look like.",
+            "Before you do, how much does this cost perat?",
+            "It depends on the modules, but I can share the price sheet after the demo.",
+            "Okay, because our tools budget was cut this year and anything expensive is a hard sell.",
+            "Understood, most teams start with a small pilot.",
+            "We also have a call with Clarion Thursday.",
+            "and I would need our VP of sales to sign off before we commit to anything.",
+            "Would it help if I joined a short call with your VP next week?",
+            "Yes, send me a calendar in White Thought Tuesday afternoon.",
+            "Just so you know, we probably can't roll anything out until next quarter.",
+            "No problem, I will send the invite under one page summary today.",
+            "Great, thanks for the walkthrough."
+          ]
+        },
+        "call_b": {
+          "audio_s": 70.2,
+          "segments": 16,
+          "gold_turns": 16,
+          "cards": 8,
+          "transcript": [
+            "Good morning Tom, can you hear me clearly?",
+            "loud and clear, I have about 20 minutes",
+            "Perfect! What made you take this meeting?",
+            "We hired 8 new reps and ramping them is taking forever.",
+            "Right now everything lives in Hubspit and our vacancies run through our treach.",
+            "How do you coach the new highs on live calls?",
+            "We built a little internal tool that flags keywords, so I am not sure we need another system.",
+            "Fair enough, what does the tool miss?",
+            "It only works after the call, so it never helps in the moment.",
+            "is the pricing per seat and is there a free trial?",
+            "proceed, and we can do a two week trial.",
+            "The last quote we got for something like this was way too expensive.",
+            "Also Procure Mint has to review every new Vendor which takes a while.",
+            "I can send our security documents now so procurement can get started.",
+            "That works. Let's set up the trial for three reps on Monday.",
+            "Thanks Doc Soon."
+          ]
+        }
+      }
+    },
+    {
+      "model": "base",
+      "backend": "faster-whisper-base-int8",
+      "classifier": "lr+all-MiniLM-L6-v2",
+      "audio_s": 158.4,
+      "streaming_rtf": 0.0757,
+      "segments": 35,
+      "e2e_all_segments": {
+        "n": 35,
+        "p50_ms": 873.2,
+        "p90_ms": 930.2,
+        "max_ms": 1049.0,
+        "mean_ms": 869.9
+      },
+      "e2e_cue_segments": {
+        "n": 16,
+        "p50_ms": 872.9,
+        "p90_ms": 921.3,
+        "max_ms": 943.4,
+        "mean_ms": 859.2
+      },
+      "breakdown_mean_ms": {
+        "endpoint_wait": 450.0,
+        "asr": 342.6,
+        "classify": 22.2
+      },
+      "call_wer": 0.0481,
+      "call_wer_errors_words": [
+        19,
+        395
+      ],
+      "turn_cues_on_asr": {
+        "tp": 14,
+        "fp": 12,
+        "fn": 3,
+        "precision": 0.5385,
+        "recall": 0.8235,
+        "f1": 0.6512
+      },
+      "turn_cues_on_gold_text": {
+        "tp": 15,
+        "fp": 13,
+        "fn": 2,
+        "precision": 0.5357,
+        "recall": 0.8824,
+        "f1": 0.6667
+      },
+      "loadavg_1m_start": 6.01,
+      "loadavg_1m_end": 2.68,
+      "calls": {
+        "call_a": {
+          "audio_s": 88.2,
+          "segments": 19,
+          "gold_turns": 19,
+          "cards": 9,
+          "transcript": [
+            "Hi Pritaya, thanks for making time today, how's the week going?",
+            "pretty hectic, but good, we just wrapped our quarterly Kip-Off.",
+            "Nice, to start, can you tell me how your team reviews sales calls today?",
+            "Our managers listen to a handful of recordings each week, mostly in the car.",
+            "A few of the reps also used Gong at their previous company.",
+            "Got it, and what happens after a call ends?",
+            "Honestly the reps tight notes into the CRM and that has been working fine for us.",
+            "That makes sense, let me show you what the live Q cards look like.",
+            "Before you do, how much does this cost per red?",
+            "It depends on the modules, but I can share the price sheet after the demo.",
+            "Okay, because our tools budget was cut this year and anything expensive is a hard sell.",
+            "Understood, most teams start with a small pilot.",
+            "We also have a call with Clary on Thursday.",
+            "and I would need our VP of sales to sign off before we commit to anything.",
+            "Would it help if I joined a short call with your VP next week?",
+            "Yes, send me a calendar invite for Tuesday afternoon.",
+            "Just so you know, we probably can't roll anything out until next quarter.",
+            "No problem, I will send the invite into one page summary today.",
+            "Great, thanks for the walkthrough."
+          ]
+        },
+        "call_b": {
+          "audio_s": 70.2,
+          "segments": 16,
+          "gold_turns": 16,
+          "cards": 9,
+          "transcript": [
+            "Good morning Tom, can you hear me clearly?",
+            "Loud and clear, I have about 20 minutes.",
+            "Perfect, what made you take this meeting?",
+            "We hired 8 new reps and ramping them is taking forever.",
+            "Right now everything lives in Hubspit and other sequences run throughout Reach.",
+            "How do you coach the new highs on live calls?",
+            "We built a little internal tool that flags keywords, so I am not sure we need another system.",
+            "Fair enough, what does the tool miss?",
+            "It only works after the call, so it never helps in the moment.",
+            "is the pricing per seat and is there a free trial?",
+            "proceed, and we can do a two week trial.",
+            "The last quote we got for something like this was way too expensive.",
+            "Also Procure Mint has to review every new vendor which takes a while.",
+            "I can send our security documents now so procurement can get started.",
+            "That works, let's set up the trial for 3 reps on Monday.",
+            "Thanks, talk soon."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -74,7 +74,79 @@ Every number below comes from `scripts/render_readme.py`, which reads the commit
 `results/*.json`. Nothing in the tables was typed by hand.
 
 <!-- RESULTS:START -->
+**Cue classification** (held-out test set, n = 172 utterances; trained on n = 252; exact-text overlap train/test = 0; percentile, 2000 resamples of test utterances, seed 0, 95% CI).
+
+| System | Macro-F1 [95% CI] | Micro-F1 [95% CI] | ms / utterance (batched) |
+|---|---|---|---|
+| rules | 0.539 [0.454, 0.608] | 0.584 [0.500, 0.660] | 0.394 |
+| lr+tfidf | 0.693 [0.619, 0.751] | 0.705 [0.638, 0.768] | 1.027 |
+| lr+all-MiniLM-L6-v2 | 0.739 [0.676, 0.789] | 0.740 [0.685, 0.794] | 4.025 |
+
+Per cue type, F1 [95% CI] (support in brackets):
+
+| Cue (support) | rules | lr+tfidf | lr+all-MiniLM-L6-v2 |
+|---|---|---|---|
+| objection_price (20) | 0.462 [0.182, 0.688]<br>P 1.00 / R 0.30 | 0.471 [0.240, 0.667]<br>P 0.57 / R 0.40 | 0.649 [0.444, 0.811]<br>P 0.71 / R 0.60 |
+| objection_timing (18) | 0.467 [0.222, 0.667]<br>P 0.58 / R 0.39 | 0.581 [0.343, 0.765]<br>P 0.69 / R 0.50 | 0.629 [0.412, 0.789]<br>P 0.65 / R 0.61 |
+| objection_authority (18) | 0.812 [0.632, 0.944]<br>P 0.93 / R 0.72 | 0.750 [0.545, 0.898]<br>P 0.86 / R 0.67 | 0.706 [0.485, 0.857]<br>P 0.75 / R 0.67 |
+| objection_status_quo (19) | 0.273 [0.000, 0.516]<br>P 1.00 / R 0.16 | 0.452 [0.214, 0.649]<br>P 0.58 / R 0.37 | 0.634 [0.435, 0.784]<br>P 0.59 / R 0.68 |
+| competitor_mention (20) | 1.000 [1.000, 1.000]<br>P 1.00 / R 1.00 | 0.947 [0.857, 1.000]<br>P 1.00 / R 0.90 | 0.950 [0.870, 1.000]<br>P 0.95 / R 0.95 |
+| pricing_question (20) | 0.333 [0.087, 0.560]<br>P 1.00 / R 0.20 | 0.833 [0.667, 0.947]<br>P 0.94 / R 0.75 | 0.927 [0.815, 1.000]<br>P 0.90 / R 0.95 |
+| next_step (20) | 0.429 [0.174, 0.645]<br>P 0.75 / R 0.30 | 0.821 [0.667, 0.938]<br>P 0.84 / R 0.80 | 0.679 [0.511, 0.809]<br>P 0.55 / R 0.90 |
+
+Paired bootstrap, macro-F1 difference vs the rules baseline:
+
+| Comparison | Δ macro-F1 [95% CI] | share of resamples where rules >= |
+|---|---|---|
+| lr+tfidf minus rules | +0.154 [+0.061, +0.249] | 0.001 |
+| lr+all-MiniLM-L6-v2 minus rules | +0.200 [+0.109, +0.291] | 0.0 |
+
+**ASR accuracy and speed** (openslr/librispeech_asr (clean/test/0000.parquet), n = 200 utterances = 24.0 min, sample seed 0; Darwin arm64, 8 cores, shared).
+
+| Model | WER [95% CI] | Errors / ref words | RTF (total) | RTF p50 / p95 per utt | load avg (1 min) start→end |
+|---|---|---|---|---|---|
+| faster-whisper-tiny-int8 (beam 1, 4 threads) | 8.3% [6.8, 9.8] | 320 / 3872 | 0.082 | 0.088 / 0.222 | 14.88 → 11.8 |
+| faster-whisper-base-int8 (beam 1, 4 threads) | 5.8% [4.6, 7.1] | 224 / 3872 | 0.147 | 0.164 / 0.362 | 11.8 → 12.54 |
+
+**Streaming end-to-end** (SYNTHETIC: macOS `say` TTS, two voices per call, -60 dBFS hiss (see scripts); chunks 100 ms; VAD energy, -42 dBFS, 450 ms trailing silence). Latency = wall time from capture of the last voiced sample to cue ready (endpoint wait + queueing + ASR + classify); excludes UI paint.
+
+| ASR | Audio | Streaming RTF | Speech-end→cue p50 / p90 / max (cue segments) | All segments p50 / p90 | Mean breakdown: endpoint / ASR / classify | Call WER | load avg start→end |
+|---|---|---|---|---|---|---|---|
+| faster-whisper-tiny-int8 | 158.4 s, 35 segments | 0.091 | 753 / 884 / 2460 ms (n=18) | 768 / 1330 ms | 450 / 414 / 35 ms | 6.3% | 3.07 → 6.01 |
+| faster-whisper-base-int8 | 158.4 s, 35 segments | 0.076 | 873 / 921 / 943 ms (n=16) | 873 / 930 ms | 450 / 343 / 22 ms | 4.8% | 6.01 → 2.68 |
+
+Turn-level cue detection on the synthetic calls (same classifier: lr+all-MiniLM-L6-v2), ASR transcript vs the gold script text:
+
+| ASR | On ASR text: P / R / F1 (tp, fp, fn) | On gold text: P / R / F1 (tp, fp, fn) |
+|---|---|---|
+| faster-whisper-tiny-int8 | 0.55 / 0.94 / 0.70 (16, 13, 1) | 0.54 / 0.88 / 0.67 (15, 13, 2) |
+| faster-whisper-base-int8 | 0.54 / 0.82 / 0.65 (14, 12, 3) | 0.54 / 0.88 / 0.67 (15, 13, 2) |
 <!-- RESULTS:END -->
+
+### Reading the results
+
+- **Learned beats rules.** Both learned classifiers beat the regex baseline on held-out macro-F1,
+  and the paired-bootstrap CIs exclude zero. Most of the gap comes from rules breaking on
+  unpunctuated, informal test phrasing: pricing-question recall is 0.20 and status-quo recall is
+  0.16. Rules still win on closed-list competitor mentions and do well on authority objections.
+  A hybrid (rules for competitors, MiniLM for everything else) is the obvious next step. I did
+  not evaluate it here because I would have picked it after seeing the test scores.
+- **MiniLM vs TF-IDF is not settled.** MiniLM leads TF-IDF by about 0.05 macro-F1, but their
+  CIs overlap. MiniLM over-fires `next_step` (P 0.55).
+- **Latency is about 0.75–0.9 s from the end of speech to the cue.** About 450 ms of that is the
+  deliberate silence endpoint. ASR is about 0.35–0.4 s per utterance, because Whisper always
+  encodes a 30 s window, so short utterances do not decode proportionally faster. Classification
+  is 20–35 ms.
+- **The streaming run does not rank tiny against base.** It is one run over 35 segments on a
+  shared machine. The tiny pass ran first and hit one warm-up-like 2.5–3 s outlier, and its mean
+  ASR time came out above base's. For speed, use the offline RTF (n = 200): tiny is about
+  1.8× faster than base.
+- **ASR errors barely hurt cues on the synthetic calls.** Turn-level cue F1 is about the same on
+  ASR text and on gold text.
+- **Most false positives come from the rep's own turns.** Gold-text false positives: 7 of 11 turns
+  are rep turns. The rep's questions ("what happens after a call ends?") read as
+  `next_step`/`pricing_question`. Diarization, or cueing only on the prospect channel, would
+  remove most of them.
 
 ## Method
 
