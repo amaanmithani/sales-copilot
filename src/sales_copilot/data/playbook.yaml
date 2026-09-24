@@ -1,0 +1,57 @@
+# Sales playbook: the suggested responses shown on cue cards.
+# The product being sold is a fictional conversation-intelligence tool ("Copilot").
+# Competitor battlecards are deliberately neutral: they coach discovery, not claims.
+version: 1
+cues:
+  objection_price:
+    title: "Price objection"
+    responses:
+      - "Acknowledge it, then anchor on value: 'Totally fair. What would it be worth if each rep got back two hours a week of admin?'"
+      - "Offer a smaller start: a pilot with 5 seats so they can prove ROI before a full commitment."
+  objection_timing:
+    title: "Timing objection"
+    responses:
+      - "Ask what changes by then: 'What needs to be true next quarter that isn't true today?'"
+      - "Propose a low-effort next step now (a 2-week pilot on recorded calls) so the decision is ready when timing opens."
+  objection_authority:
+    title: "Needs sign-off"
+    responses:
+      - "Map the process: 'Who else weighs in, and what will each of them care about most?'"
+      - "Offer enablement: a one-page business case and a joint call with the decision maker."
+  objection_status_quo:
+    title: "Happy with status quo"
+    responses:
+      - "Get curious, don't argue: 'What does the current setup not give you that you wish it did?'"
+      - "Quantify the hidden cost of the current process (manual notes, missed follow-ups)."
+  competitor_mention:
+    title: "Competitor mentioned"
+    responses:
+      - "Ask what they like and dislike about it before comparing anything."
+  pricing_question:
+    title: "Pricing question"
+    responses:
+      - "Qualify before quoting: 'Happy to share. How many reps, and which modules matter most?'"
+      - "Give the range from the price sheet, then tie it to the value discussed."
+  next_step:
+    title: "Next step detected"
+    responses:
+      - "Confirm owner, date and attendees out loud, and send the invite before the call ends."
+competitors:
+  Gong:
+    aliases: ["gong", "gong.io"]
+    battlecard: "Ask which Gong features they actually use weekly; probe on real-time in-call help."
+  Chorus:
+    aliases: ["chorus", "chorus.ai", "chorus ai"]
+    battlecard: "Ask how their reps use Chorus during live calls versus after them."
+  Clari:
+    aliases: ["clari", "clary", "clarie"]
+    battlecard: "Clari is forecasting-first; ask whether call coaching is the gap."
+  Salesloft:
+    aliases: ["salesloft", "sales loft"]
+    battlecard: "Salesloft is a cadence tool; ask how call insights feed their sequences today."
+  Outreach:
+    aliases: ["outreach", "outreach.io"]
+    battlecard: "Ask whether Outreach's call features are enabled and adopted on their plan."
+  HubSpot:
+    aliases: ["hubspot", "hub spot"]
+    battlecard: "Ask which HubSpot tier they're on and whether call notes land in the right fields."

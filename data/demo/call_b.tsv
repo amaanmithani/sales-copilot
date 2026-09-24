@@ -1,0 +1,17 @@
+speaker	labels	text
+rep	none	Good morning Tom, can you hear me clearly?
+prospect	none	Loud and clear. I have about twenty minutes.
+rep	none	Perfect. What made you take this meeting?
+prospect	none	We hired eight new reps and ramping them is taking forever.
+prospect	competitor_mention	Right now everything lives in HubSpot and our sequences run through Outreach.
+rep	none	How do you coach the new hires on live calls?
+prospect	objection_status_quo	We built a little internal tool that flags keywords, so I am not sure we need another system.
+rep	none	Fair enough. What does that tool miss?
+prospect	none	It only works after the call, so it never helps in the moment.
+prospect	pricing_question	Is the pricing per seat, and is there a free trial?
+rep	none	Per seat, and we can do a two week trial.
+prospect	objection_price	The last quote we got for something like this was way too expensive.
+prospect	objection_authority	Also procurement has to review every new vendor, which takes a while.
+rep	next_step	I can send our security documents now so procurement can get started.
+prospect	next_step	That works. Let's set up the trial for three reps on Monday.
+prospect	none	Thanks, talk soon.

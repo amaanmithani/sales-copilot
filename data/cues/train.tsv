@@ -1,0 +1,253 @@
+labels	text
+objection_price	That's way more than we budgeted for this year.
+objection_price	Honestly, the price is too high for a team our size.
+objection_price	We just don't have the budget for something like this.
+objection_price	It's expensive compared to what we pay today.
+objection_price	I can't justify that cost to finance.
+objection_price	That number is a lot higher than I expected.
+objection_price	Our budget got cut, so spending this much isn't realistic.
+objection_price	It seems pricey for what it does.
+objection_price	We'd need a significant discount to make this work.
+objection_price	The per-seat cost adds up way too fast for us.
+objection_price	Finance is going to say it's too expensive.
+objection_price	That's out of our price range, to be honest.
+objection_price	We can't afford that at the moment.
+objection_price	The annual commitment is too big a spend for us.
+objection_price	Cost is the main blocker here.
+objection_price	I like it, but the pricing is really steep.
+objection_price	There's no way we can pay that much per user.
+objection_price	It's hard to see the ROI at that price point.
+objection_price	Budget is tight and this would eat most of it.
+objection_price	That's more than double what we spend on tooling now.
+objection_price	We were hoping for something a lot cheaper.
+objection_price	The implementation fee alone is too much.
+objection_price	I don't think we can swing that financially.
+objection_price	That's too rich for our blood.
+objection_price	Money is the issue, not the product.
+objection_price	Our CFO will push back hard on that price.
+objection_price	It's a big investment for a company our size.
+objection_price	Honestly we don't have that kind of money set aside.
+objection_timing	Now isn't a good time for us to take this on.
+objection_timing	Can we revisit this next quarter?
+objection_timing	We're in the middle of a reorg, so the timing is bad.
+objection_timing	This isn't a priority for us right now.
+objection_timing	Let's circle back after the new year.
+objection_timing	We have too much going on this quarter.
+objection_timing	Maybe later in the year, but not now.
+objection_timing	We're heads down on a product launch until March.
+objection_timing	I'd rather wait until our planning cycle in the fall.
+objection_timing	The team doesn't have bandwidth to roll out anything new.
+objection_timing	Reach out again in six months.
+objection_timing	We just aren't ready to make a change yet.
+objection_timing	Timing-wise, this would have to be a next year thing.
+objection_timing	We're frozen on new projects until the hiring settles.
+objection_timing	Honestly it's not on our roadmap for this half.
+objection_timing	Can you follow up with me in a few months?
+objection_timing	We're too busy with year-end close to look at this.
+objection_timing	It's just not the right moment for us.
+objection_timing	We'd have to push this out until after the migration.
+objection_timing	Let's park this for now and talk again in Q3.
+objection_timing	I don't see us getting to this before summer.
+objection_timing	We have other fires to put out first.
+objection_timing	The rollout would have to wait until the busy season is over.
+objection_timing	Ask me again when things calm down.
+objection_timing	Nothing new gets approved until the next fiscal year.
+objection_timing	We're not in a rush on this.
+objection_authority	I'd need to run this by my manager first.
+objection_authority	I'm not the one who makes the final call.
+objection_authority	Our VP of sales has to sign off on anything like this.
+objection_authority	Procurement will need to review it before we commit.
+objection_authority	I can't approve purchases over a certain amount.
+objection_authority	Let me check with my boss and get back to you.
+objection_authority	The decision sits with our leadership team.
+objection_authority	Legal has to look at the contract first.
+objection_authority	I'll have to get buy-in from the other directors.
+objection_authority	My CEO likes to be involved in these decisions.
+objection_authority	Security needs to approve any new vendor.
+objection_authority	I'm just evaluating; someone else decides.
+objection_authority	IT has final say on tools that touch our data.
+objection_authority	I'd have to convince the head of revenue.
+objection_authority	This would need board approval at our size.
+objection_authority	I need to loop in my director before saying yes.
+objection_authority	Anything with a contract goes through our purchasing department.
+objection_authority	It's not my budget, so I can't commit.
+objection_authority	The ops team owns that decision.
+objection_authority	I'll need to present this to the committee.
+objection_authority	Let me talk it over with my co-founder.
+objection_authority	Finance signs every vendor agreement, not me.
+objection_authority	We have a buying committee for this kind of thing.
+objection_authority	I can recommend it, but I can't sign.
+objection_authority	My manager would kill me if I signed without asking.
+objection_status_quo	We're pretty happy with what we have today.
+objection_status_quo	Our current process works fine.
+objection_status_quo	We built our own tool in-house for this.
+objection_status_quo	I don't see a reason to switch.
+objection_status_quo	Spreadsheets have been working for us.
+objection_status_quo	We already have a solution that covers this.
+objection_status_quo	The team is used to the current setup and won't want to change.
+objection_status_quo	Switching would be too much of a hassle.
+objection_status_quo	We don't really have a problem here.
+objection_status_quo	Our reps just take notes by hand and that's fine.
+objection_status_quo	Migrating everything over sounds painful.
+objection_status_quo	We've invested a lot in our existing system.
+objection_status_quo	Nobody on the team is asking for this.
+objection_status_quo	I'm not convinced we need another tool.
+objection_status_quo	Our engineers maintain a script that does most of this.
+objection_status_quo	The way we do it now is good enough.
+objection_status_quo	We tried a tool like this before and nobody used it.
+objection_status_quo	Change management would be a nightmare.
+objection_status_quo	We're locked into our current vendor for two more years.
+objection_status_quo	Our managers already listen to call recordings manually.
+objection_status_quo	I don't think adoption would be there.
+objection_status_quo	We have a homegrown dashboard that does the job.
+objection_status_quo	We're comfortable with how things are.
+objection_status_quo	If it isn't broken, why fix it?
+objection_status_quo	We already pay for too many tools that do similar things.
+objection_status_quo	Retraining everyone isn't worth it.
+competitor_mention	We're also looking at Gong.
+competitor_mention	How are you different from Chorus?
+competitor_mention	Our team currently uses Salesloft for cadences.
+competitor_mention	Clari showed us something similar last week.
+competitor_mention	We have Outreach already.
+competitor_mention	HubSpot has a feature that does this, doesn't it?
+competitor_mention	Gong quoted us for the same thing.
+competitor_mention	What does this do that Gong doesn't?
+competitor_mention	We had a demo with Chorus yesterday.
+competitor_mention	Our CRM is HubSpot and it has call recording built in.
+competitor_mention	I've heard good things about Clari.
+competitor_mention	We're a Salesloft shop.
+competitor_mention	Outreach has conversation intelligence too, right?
+competitor_mention	A friend's company switched to Gong last year.
+competitor_mention	Chorus is what my last company used.
+competitor_mention	How does your forecasting compare to Clari?
+competitor_mention	We're evaluating you and Salesloft side by side.
+competitor_mention	Gong's AI summaries are pretty good.
+competitor_mention	The HubSpot sales hub already covers most of this.
+competitor_mention	Our previous vendor was Outreach.
+competitor_mention	Is this built on top of Gong or something?
+competitor_mention	Chorus integrates with our Zoom already.
+competitor_mention	Clari is the incumbent here.
+competitor_mention	I've been comparing you with Gong and Chorus.
+competitor_mention	What would migrating off Outreach look like?
+competitor_mention	Salesloft offered us a bundle deal.
+competitor_mention;objection_price	Gong is cheaper than what you just quoted.
+competitor_mention;objection_status_quo	We already use Chorus and it works well enough.
+competitor_mention;objection_price	HubSpot gives us this for free with our plan.
+competitor_mention;objection_status_quo	We're happy with Outreach, honestly.
+competitor_mention;pricing_question	How does your price compare to Salesloft?
+competitor_mention;objection_price	Clari came in way under your number.
+pricing_question	How much does it cost?
+pricing_question	What's the pricing like?
+pricing_question	Is it priced per seat or per team?
+pricing_question	Do you have a free trial?
+pricing_question	What would this run us for twenty reps?
+pricing_question	Are there any setup fees?
+pricing_question	Do you offer discounts for annual contracts?
+pricing_question	What's included in the base plan?
+pricing_question	How does your pricing work?
+pricing_question	Is there a minimum number of licenses?
+pricing_question	What's the ballpark cost?
+pricing_question	Do you charge extra for integrations?
+pricing_question	Can you send over a quote?
+pricing_question	Is there a startup discount?
+pricing_question	How much is the enterprise tier?
+pricing_question	Do you bill monthly or annually?
+pricing_question	What's the price per user per month?
+pricing_question	Is support included in the price?
+pricing_question	Are there overage charges if we go over the call limit?
+pricing_question	What does a typical contract look like cost-wise?
+pricing_question	Can we pay quarterly?
+pricing_question	Do nonprofits get special pricing?
+pricing_question	What's the cheapest plan you have?
+pricing_question	How much would it be to add the coaching module?
+pricing_question	Can you give me a rough number?
+pricing_question	Are prices going up next year?
+pricing_question	What would it cost if we started with just five seats?
+pricing_question	Is there a money-back guarantee?
+next_step	Let's set up a demo for the whole team.
+next_step	Can you send me the contract?
+next_step	Let's schedule a follow-up for next Tuesday.
+next_step	Send over the proposal and I'll review it.
+next_step	I'd like to start a pilot with a couple of reps.
+next_step	Can we get a technical deep dive with your engineers?
+next_step	Let's book time with my manager next week.
+next_step	Please email me the security documentation.
+next_step	What are the next steps from here?
+next_step	I'll introduce you to our head of sales ops.
+next_step	Let's get a trial account set up.
+next_step	Can you put together a quote for thirty seats?
+next_step	I'll forward this to procurement today.
+next_step	Let's reconnect on Thursday at two.
+next_step	Send me a calendar invite.
+next_step	We'd like to move forward.
+next_step	Can we do a proof of concept on our data?
+next_step	Let's get the order form signed this week.
+next_step	I'll share the recording with my team and we'll regroup.
+next_step	Can you send references from similar customers?
+next_step	Let's plan the onboarding kickoff.
+next_step	I'm ready to sign if the terms look good.
+next_step	Put something on my calendar for Monday.
+next_step	I'll get you connected with our IT lead.
+next_step	Send the MSA to our legal inbox.
+next_step	How soon could we start onboarding?
+next_step	Let's do a second call with the directors.
+next_step	Can you share a mutual action plan?
+next_step;objection_authority	I'll set up a meeting with my boss so you can pitch her directly.
+next_step;objection_authority	Send me a one-pager I can take to the CFO for approval.
+next_step;pricing_question	Can you send a quote with annual pricing?
+next_step;objection_timing	Let's schedule a call in January when budgets reset.
+none	Hi, thanks for taking the time today.
+none	Can you hear me okay?
+none	Sorry, I was on mute.
+none	How was your weekend?
+none	We have about thirty reps across two regions.
+none	Most of our deals close within sixty days.
+none	Our average contract value is around fifteen thousand.
+none	I've been in this role for about two years.
+none	We sell mainly to mid-market manufacturing companies.
+none	The price of coffee in our office keeps going up.
+none	My boss is out on vacation this week.
+none	We use Zoom for most of our calls.
+none	The weather here has been awful.
+none	Let me share my screen.
+none	That makes sense.
+none	Interesting, tell me more about that.
+none	Our sales cycle is pretty long.
+none	The team is mostly remote.
+none	We hired five new reps last month.
+none	I'm the head of enablement.
+none	Coaching is a big focus for us this year.
+none	Our win rate has dropped a bit.
+none	I think you're frozen, give me a second.
+none	Yeah, we record some calls already.
+none	Okay, go ahead.
+none	Right, that's a good point.
+none	We're based in Chicago.
+none	The new CRM fields took forever to set up.
+none	Our managers do weekly pipeline reviews.
+none	I saw the dashboard, it looks clean.
+none	Sure, happy to walk you through our process.
+none	We mostly do outbound.
+none	Can you repeat that last part?
+none	Our quota attainment was about seventy percent.
+none	The product looks really slick.
+none	I love the transcript search.
+none	We run a lot of discovery calls.
+none	Onboarding new reps takes about three months.
+none	Let me pull up my notes.
+none	Great question.
+none	Our marketing team generates most of the leads.
+none	We had a good quarter.
+none	The next slide shows our funnel.
+none	We talk to about forty prospects a week.
+none	I'm not sure I followed that.
+none	That's cool.
+none	We track everything in the CRM.
+none	My team really cares about call quality.
+none	Honestly the reps hate data entry.
+none	We cover North America and Europe.
+none	Thanks, this has been helpful.
+none	Are you able to see my screen now?
+none	Our last offsite was in Denver.
+none	I'll be honest, I haven't read the deck yet.
+none	The integration list is impressive.

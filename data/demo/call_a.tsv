@@ -1,0 +1,20 @@
+speaker	labels	text
+rep	none	Hi Priya, thanks for making time today. How's the week going?
+prospect	none	Pretty hectic, but good. We just wrapped our quarterly kickoff.
+rep	none	Nice. To start, can you tell me how your team reviews sales calls today?
+prospect	none	Our managers listen to a handful of recordings each week, mostly in the car.
+prospect	competitor_mention	A few of the reps also used Gong at their previous company.
+rep	none	Got it. And what happens after a call ends?
+prospect	objection_status_quo	Honestly the reps type notes into the CRM and that has been working fine for us.
+rep	none	That makes sense. Let me show you what the live cue cards look like.
+prospect	pricing_question	Before you do, how much does this cost per rep?
+rep	none	It depends on the modules, but I can share the price sheet after the demo.
+prospect	objection_price	Okay, because our tools budget was cut this year and anything expensive is a hard sell.
+rep	none	Understood. Most teams start with a small pilot.
+prospect	competitor_mention	We also have a call with Clari on Thursday.
+prospect	objection_authority	And I would need our VP of sales to sign off before we commit to anything.
+rep	next_step	Would it help if I joined a short call with your VP next week?
+prospect	next_step	Yes, send me a calendar invite for Tuesday afternoon.
+prospect	objection_timing	Just so you know, we probably can't roll anything out until next quarter.
+rep	next_step	No problem. I will send the invite and a one page summary today.
+prospect	none	Great, thanks for the walkthrough.

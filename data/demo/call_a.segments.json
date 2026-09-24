@@ -1,0 +1,185 @@
+{
+  "call": "call_a",
+  "synthetic": true,
+  "tts": "macOS say",
+  "voices": {
+    "rep": "Samantha",
+    "prospect": "Daniel"
+  },
+  "rate_wpm": 185,
+  "duration_s": 88.193,
+  "segments": [
+    {
+      "index": 0,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Hi Priya, thanks for making time today. How's the week going?",
+      "start_s": 0.5,
+      "end_s": 4.307
+    },
+    {
+      "index": 1,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "Pretty hectic, but good. We just wrapped our quarterly kickoff.",
+      "start_s": 5.207,
+      "end_s": 9.026
+    },
+    {
+      "index": 2,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Nice. To start, can you tell me how your team reviews sales calls today?",
+      "start_s": 10.226,
+      "end_s": 14.54
+    },
+    {
+      "index": 3,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "Our managers listen to a handful of recordings each week, mostly in the car.",
+      "start_s": 15.54,
+      "end_s": 19.78
+    },
+    {
+      "index": 4,
+      "speaker": "prospect",
+      "labels": [
+        "competitor_mention"
+      ],
+      "text": "A few of the reps also used Gong at their previous company.",
+      "start_s": 21.18,
+      "end_s": 24.23
+    },
+    {
+      "index": 5,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Got it. And what happens after a call ends?",
+      "start_s": 25.03,
+      "end_s": 27.484
+    },
+    {
+      "index": 6,
+      "speaker": "prospect",
+      "labels": [
+        "objection_status_quo"
+      ],
+      "text": "Honestly the reps type notes into the CRM and that has been working fine for us.",
+      "start_s": 28.384,
+      "end_s": 32.884
+    },
+    {
+      "index": 7,
+      "speaker": "rep",
+      "labels": [],
+      "text": "That makes sense. Let me show you what the live cue cards look like.",
+      "start_s": 34.084,
+      "end_s": 37.648
+    },
+    {
+      "index": 8,
+      "speaker": "prospect",
+      "labels": [
+        "pricing_question"
+      ],
+      "text": "Before you do, how much does this cost per rep?",
+      "start_s": 38.648,
+      "end_s": 41.385
+    },
+    {
+      "index": 9,
+      "speaker": "rep",
+      "labels": [],
+      "text": "It depends on the modules, but I can share the price sheet after the demo.",
+      "start_s": 42.785,
+      "end_s": 46.694
+    },
+    {
+      "index": 10,
+      "speaker": "prospect",
+      "labels": [
+        "objection_price"
+      ],
+      "text": "Okay, because our tools budget was cut this year and anything expensive is a hard sell.",
+      "start_s": 47.494,
+      "end_s": 52.578
+    },
+    {
+      "index": 11,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Understood. Most teams start with a small pilot.",
+      "start_s": 53.478,
+      "end_s": 56.278
+    },
+    {
+      "index": 12,
+      "speaker": "prospect",
+      "labels": [
+        "competitor_mention"
+      ],
+      "text": "We also have a call with Clari on Thursday.",
+      "start_s": 57.478,
+      "end_s": 59.844
+    },
+    {
+      "index": 13,
+      "speaker": "prospect",
+      "labels": [
+        "objection_authority"
+      ],
+      "text": "And I would need our VP of sales to sign off before we commit to anything.",
+      "start_s": 60.844,
+      "end_s": 64.791
+    },
+    {
+      "index": 14,
+      "speaker": "rep",
+      "labels": [
+        "next_step"
+      ],
+      "text": "Would it help if I joined a short call with your VP next week?",
+      "start_s": 66.191,
+      "end_s": 69.349
+    },
+    {
+      "index": 15,
+      "speaker": "prospect",
+      "labels": [
+        "next_step"
+      ],
+      "text": "Yes, send me a calendar invite for Tuesday afternoon.",
+      "start_s": 70.149,
+      "end_s": 73.743
+    },
+    {
+      "index": 16,
+      "speaker": "prospect",
+      "labels": [
+        "objection_timing"
+      ],
+      "text": "Just so you know, we probably can't roll anything out until next quarter.",
+      "start_s": 74.643,
+      "end_s": 78.912
+    },
+    {
+      "index": 17,
+      "speaker": "rep",
+      "labels": [
+        "next_step"
+      ],
+      "text": "No problem. I will send the invite and a one page summary today.",
+      "start_s": 80.112,
+      "end_s": 83.794
+    },
+    {
+      "index": 18,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "Great, thanks for the walkthrough.",
+      "start_s": 84.794,
+      "end_s": 86.793
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "call": "call_b",
+  "synthetic": true,
+  "tts": "macOS say",
+  "voices": {
+    "rep": "Karen",
+    "prospect": "Rishi"
+  },
+  "rate_wpm": 185,
+  "duration_s": 70.157,
+  "segments": [
+    {
+      "index": 0,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Good morning Tom, can you hear me clearly?",
+      "start_s": 0.5,
+      "end_s": 2.799
+    },
+    {
+      "index": 1,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "Loud and clear. I have about twenty minutes.",
+      "start_s": 3.699,
+      "end_s": 6.422
+    },
+    {
+      "index": 2,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Perfect. What made you take this meeting?",
+      "start_s": 7.622,
+      "end_s": 10.047
+    },
+    {
+      "index": 3,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "We hired eight new reps and ramping them is taking forever.",
+      "start_s": 11.047,
+      "end_s": 14.633
+    },
+    {
+      "index": 4,
+      "speaker": "prospect",
+      "labels": [
+        "competitor_mention"
+      ],
+      "text": "Right now everything lives in HubSpot and our sequences run through Outreach.",
+      "start_s": 16.033,
+      "end_s": 20.422
+    },
+    {
+      "index": 5,
+      "speaker": "rep",
+      "labels": [],
+      "text": "How do you coach the new hires on live calls?",
+      "start_s": 21.222,
+      "end_s": 23.726
+    },
+    {
+      "index": 6,
+      "speaker": "prospect",
+      "labels": [
+        "objection_status_quo"
+      ],
+      "text": "We built a little internal tool that flags keywords, so I am not sure we need another system.",
+      "start_s": 24.626,
+      "end_s": 30.358
+    },
+    {
+      "index": 7,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Fair enough. What does that tool miss?",
+      "start_s": 31.558,
+      "end_s": 33.878
+    },
+    {
+      "index": 8,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "It only works after the call, so it never helps in the moment.",
+      "start_s": 34.878,
+      "end_s": 38.709
+    },
+    {
+      "index": 9,
+      "speaker": "prospect",
+      "labels": [
+        "pricing_question"
+      ],
+      "text": "Is the pricing per seat, and is there a free trial?",
+      "start_s": 40.109,
+      "end_s": 43.237
+    },
+    {
+      "index": 10,
+      "speaker": "rep",
+      "labels": [],
+      "text": "Per seat, and we can do a two week trial.",
+      "start_s": 44.037,
+      "end_s": 46.433
+    },
+    {
+      "index": 11,
+      "speaker": "prospect",
+      "labels": [
+        "objection_price"
+      ],
+      "text": "The last quote we got for something like this was way too expensive.",
+      "start_s": 47.333,
+      "end_s": 51.287
+    },
+    {
+      "index": 12,
+      "speaker": "prospect",
+      "labels": [
+        "objection_authority"
+      ],
+      "text": "Also procurement has to review every new vendor, which takes a while.",
+      "start_s": 52.487,
+      "end_s": 56.786
+    },
+    {
+      "index": 13,
+      "speaker": "rep",
+      "labels": [
+        "next_step"
+      ],
+      "text": "I can send our security documents now so procurement can get started.",
+      "start_s": 57.786,
+      "end_s": 61.779
+    },
+    {
+      "index": 14,
+      "speaker": "prospect",
+      "labels": [
+        "next_step"
+      ],
+      "text": "That works. Let's set up the trial for three reps on Monday.",
+      "start_s": 63.179,
+      "end_s": 66.976
+    },
+    {
+      "index": 15,
+      "speaker": "prospect",
+      "labels": [],
+      "text": "Thanks, talk soon.",
+      "start_s": 67.776,
+      "end_s": 69.257
+    }
+  ]
+}

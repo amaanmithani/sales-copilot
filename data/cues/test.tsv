@@ -1,0 +1,173 @@
+labels	text
+objection_price	um yeah so the thing is that number is just not gonna fly with our finance people
+objection_price	i mean it looks great but we were thinking more like half of that
+objection_price	honestly for what we'd get out of it that's a lot of money
+objection_price	we got burned last year overspending on software so the cost really worries me
+objection_price	i don't know if i can get that past our spend review, it's a big ticket
+objection_price	yeah that's uh that's a bit rich for us
+objection_price	we're a small shop and that would be like a third of our tools spend
+objection_price	i was kind of hoping it'd be under ten grand all in
+objection_price	so the quote you sent is basically a non starter
+objection_price	our whole tooling line item for next year is smaller than that
+objection_price	the seats get pricey once you add the managers too
+objection_price	if you can't come down on price i don't think this happens
+objection_price	look we love it but we're bootstrapped and that's steep
+objection_price	that's a tough number to swallow
+objection_price	it feels overpriced for a note taker to be honest
+objection_price	there's just no money for this in the plan
+objection_price	i'm worried about paying that and then nobody using it
+objection_price	we'd go broke paying that for every rep
+objection_timing	so we're kind of slammed until after the conference
+objection_timing	ping me again in like q2 maybe
+objection_timing	right now everyone's focused on hitting the number so it's a no for now
+objection_timing	we just switched crms so nobody wants another change for a while
+objection_timing	uh i think this is more of a twenty twenty seven conversation
+objection_timing	give us a couple months to get settled and then we can chat
+objection_timing	it's just bad timing with the layoffs and everything
+objection_timing	we're not evaluating anything new until the fiscal year flips
+objection_timing	honestly i'd put this on the back burner for now
+objection_timing	the team's stretched thin, maybe after the holidays
+objection_timing	let's revisit once the merger closes
+objection_timing	this isn't something we'd tackle before the second half
+objection_timing	i can't take on another project this month
+objection_timing	we're in a code freeze through december so not now
+objection_timing	check back with me in the spring
+objection_timing	we'll probably look at tools like this later, just not yet
+objection_timing	our roadmap is full for the next two quarters
+objection_authority	yeah i'd have to take this to my vp before anything happens
+objection_authority	so i'm more of an influencer here the budget owner is our cro
+objection_authority	our procurement process is pretty heavy so they'd need to be involved
+objection_authority	i'll need the security team to do their vendor review
+objection_authority	um honestly this is above my pay grade
+objection_authority	my boss is the one who'd have to say yes
+objection_authority	anything over five k needs sign off from the finance director
+objection_authority	i'd want our rev ops lead to weigh in before we decide
+objection_authority	the founders approve every new subscription
+objection_authority	our legal team reviews all the paper so that'll take a while
+objection_authority	i can champion it internally but i can't sign it
+objection_authority	we'd need a green light from the executive team
+objection_authority	it'd have to go through the steering committee
+objection_authority	i don't own the budget for sales tools
+objection_authority	let me see what my manager thinks and i'll let you know
+objection_authority	our it folks would need to approve the integration
+objection_authority	i'd have to get the other sales leaders on board first
+objection_status_quo	we kind of hacked together our own version with some zapier stuff
+objection_status_quo	our current way of doing it is fine for now
+objection_status_quo	i just don't see us ripping out what we have
+objection_status_quo	the reps are pretty attached to their own note templates
+objection_status_quo	we've done okay without anything like this so far
+objection_status_quo	we've got an internal tool the data team built that covers most of it
+objection_status_quo	moving all our historical calls over sounds like a nightmare
+objection_status_quo	i'm not sure there's a real pain point here for us
+objection_status_quo	our last rollout of a tool like this flopped
+objection_status_quo	we're under contract with our current provider through next year
+objection_status_quo	nobody's complaining about the current setup
+objection_status_quo	i feel like we'd just end up not using it
+objection_status_quo	we already have three tools that sort of do this
+objection_status_quo	the managers are fine just shadowing calls live
+objection_status_quo	why would we change something that works
+objection_status_quo	getting forty reps to learn a new tool is a big lift
+objection_status_quo	we're pretty set in our ways to be honest
+competitor_mention	so we've also got gong coming in to pitch on friday
+competitor_mention	what's the main difference between you and chorus
+competitor_mention	we run all our sequences through salesloft today
+competitor_mention	clari's rep told us they do basically the same thing
+competitor_mention	i think outreach just launched something like this
+competitor_mention	we're on hubspot for pretty much everything
+competitor_mention	a couple of my reps used gong at their old jobs
+competitor_mention	how do you stack up against clari on forecasting
+competitor_mention	does this plug into outreach at all
+competitor_mention	my last company had chorus and people liked it
+competitor_mention	we're kind of deciding between you and gong
+competitor_mention	salesloft keeps emailing me about their new ai feature
+competitor_mention	is your transcription better than hubspot's
+competitor_mention	we did a gong trial but didn't buy
+competitor_mention	chorus got acquired right so what happened to it
+competitor_mention;objection_price	gong offered us a much lower rate
+competitor_mention;objection_status_quo	hubspot already does call notes for us so i'm not sure we need this
+competitor_mention;objection_price	outreach bundles this in for free so paying extra is hard
+competitor_mention;pricing_question	are you cheaper than clari
+competitor_mention;objection_status_quo	we've been on salesloft forever and it's fine
+pricing_question	so what are we talking cost wise
+pricing_question	how do you guys charge for this
+pricing_question	is it a flat fee or does it scale with users
+pricing_question	roughly what would forty seats come out to
+pricing_question	is there a trial period we could use
+pricing_question	do you have a cheaper tier for small teams
+pricing_question	what's the damage for the full package
+pricing_question	are integrations included or extra
+pricing_question	is there a discount if we sign for two years
+pricing_question	what does it cost per rep
+pricing_question	can we pay monthly instead of up front
+pricing_question	do you charge for the managers seats too
+pricing_question	what's the pricing on the analytics add on
+pricing_question	any hidden fees i should know about
+pricing_question	is there onboarding cost on top
+pricing_question	how much for unlimited recording
+pricing_question	do you have a price sheet you can share
+pricing_question	what kind of discount could you do for a startup
+next_step	cool can you shoot me a calendar invite for next week
+next_step	let's get my team on a demo on thursday
+next_step	send over the paperwork and i'll get it moving
+next_step	i'd love to try it with two or three reps for a few weeks
+next_step	can you set up a call with your solutions engineer
+next_step	so what happens next on your end
+next_step	i'll loop in our sales ops manager on email
+next_step	please send the soc two report over
+next_step	let's pencil in wednesday afternoon to go over the pilot results
+next_step	we're ready to move ahead
+next_step	can you send a formal proposal by friday
+next_step	i'll bring this to our team meeting and get back to you monday
+next_step	let's kick off onboarding the first week of next month
+next_step	get me a trial login and i'll poke around
+next_step	can we run it on a few of our real calls as a test
+next_step	send me a couple of customer references in our space
+next_step	let's lock in a follow up for the fifteenth
+next_step;objection_authority	can you join a call with my vp so she can ask her questions
+next_step;pricing_question	send me pricing for thirty seats so i can review
+next_step;objection_timing	let's set a reminder to reconnect in february
+none	hey good to see you again
+none	sorry i'm a couple minutes late
+none	can you hear me alright
+none	i think my camera's not working hold on
+none	we're about sixty people total with twenty in sales
+none	most of our pipeline comes from inbound
+none	i took over the team in january
+none	our average deal is around twelve grand
+none	we mostly sell to hospitals and clinics
+none	coffee prices at the cafe downstairs are insane now
+none	my boss just got back from paternity leave
+none	yeah that makes a lot of sense
+none	we record calls in zoom but nobody watches them
+none	okay go ahead with the demo
+none	that's a good point actually
+none	our reps spend a ton of time on admin work
+none	we have a pipeline review every monday
+none	i'm based in austin
+none	the dashboard looks nice
+none	uh sorry could you say that again
+none	our ramp time for new hires is about four months
+none	wait let me grab a pen
+none	we had a rough q1 but q2 was better
+none	i run enablement and some of rev ops
+none	the search feature is pretty neat
+none	we do a lot of cold calling
+none	most calls are about thirty minutes
+none	we're growing the team next year
+none	our marketing team is super small
+none	i'm curious how the summaries work
+none	yeah we've heard that before
+none	the auto tagging is interesting
+none	our churn is pretty low
+none	that screen share is a little blurry
+none	i was just reading about ai note takers
+none	the price tag field in our crm is always empty
+none	one of our reps used to work at a consulting firm
+none	we have customers in canada too
+none	sure that works
+none	okay i see
+none	so our managers listen to maybe five calls a week
+none	it's been a busy week
+none	we're pretty data driven as a team
+none	that's helpful context thanks
+none	thanks for the overview

@@ -1,0 +1,486 @@
+{
+  "train_file": "data/cues/train.tsv",
+  "test_file": "data/cues/test.tsv",
+  "n_train": 252,
+  "n_test": 172,
+  "exact_text_overlap_train_test": 0,
+  "labels": [
+    "objection_price",
+    "objection_timing",
+    "objection_authority",
+    "objection_status_quo",
+    "competitor_mention",
+    "pricing_question",
+    "next_step"
+  ],
+  "threshold": 0.5,
+  "authored_by": "project author (single author for train and test; see README limits)",
+  "bootstrap": "percentile, 2000 resamples of test utterances, seed 0, 95% CI",
+  "machine": "Darwin arm64",
+  "systems": {
+    "rules": {
+      "n": 172,
+      "n_boot": 2000,
+      "seed": 0,
+      "per_label": {
+        "objection_price": {
+          "support": 20,
+          "precision": {
+            "point": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.3,
+            "lo": 0.1,
+            "hi": 0.5239
+          },
+          "f1": {
+            "point": 0.4615,
+            "lo": 0.1818,
+            "hi": 0.6876
+          }
+        },
+        "objection_timing": {
+          "support": 18,
+          "precision": {
+            "point": 0.5833,
+            "lo": 0.2854,
+            "hi": 0.8669
+          },
+          "recall": {
+            "point": 0.3889,
+            "lo": 0.1665,
+            "hi": 0.6364
+          },
+          "f1": {
+            "point": 0.4667,
+            "lo": 0.2222,
+            "hi": 0.6667
+          }
+        },
+        "objection_authority": {
+          "support": 18,
+          "precision": {
+            "point": 0.9286,
+            "lo": 0.75,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.7222,
+            "lo": 0.5,
+            "hi": 0.9333
+          },
+          "f1": {
+            "point": 0.8125,
+            "lo": 0.6316,
+            "hi": 0.9444
+          }
+        },
+        "objection_status_quo": {
+          "support": 19,
+          "precision": {
+            "point": 1.0,
+            "lo": 0.0,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.1579,
+            "lo": 0.0,
+            "hi": 0.3479
+          },
+          "f1": {
+            "point": 0.2727,
+            "lo": 0.0,
+            "hi": 0.5162
+          }
+        },
+        "competitor_mention": {
+          "support": 20,
+          "precision": {
+            "point": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          },
+          "f1": {
+            "point": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          }
+        },
+        "pricing_question": {
+          "support": 20,
+          "precision": {
+            "point": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.2,
+            "lo": 0.0455,
+            "hi": 0.3889
+          },
+          "f1": {
+            "point": 0.3333,
+            "lo": 0.087,
+            "hi": 0.56
+          }
+        },
+        "next_step": {
+          "support": 20,
+          "precision": {
+            "point": 0.75,
+            "lo": 0.3747,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.3,
+            "lo": 0.1053,
+            "hi": 0.5005
+          },
+          "f1": {
+            "point": 0.4286,
+            "lo": 0.1739,
+            "hi": 0.6452
+          }
+        }
+      },
+      "macro_f1": {
+        "point": 0.5393,
+        "lo": 0.4541,
+        "hi": 0.6084
+      },
+      "micro_f1": {
+        "point": 0.5842,
+        "lo": 0.5,
+        "hi": 0.6603
+      },
+      "ms_per_utterance_batch": 0.394
+    },
+    "lr+tfidf": {
+      "n": 172,
+      "n_boot": 2000,
+      "seed": 0,
+      "per_label": {
+        "objection_price": {
+          "support": 20,
+          "precision": {
+            "point": 0.5714,
+            "lo": 0.3,
+            "hi": 0.8462
+          },
+          "recall": {
+            "point": 0.4,
+            "lo": 0.1875,
+            "hi": 0.6154
+          },
+          "f1": {
+            "point": 0.4706,
+            "lo": 0.24,
+            "hi": 0.6667
+          }
+        },
+        "objection_timing": {
+          "support": 18,
+          "precision": {
+            "point": 0.6923,
+            "lo": 0.4209,
+            "hi": 0.9232
+          },
+          "recall": {
+            "point": 0.5,
+            "lo": 0.2727,
+            "hi": 0.7334
+          },
+          "f1": {
+            "point": 0.5806,
+            "lo": 0.3426,
+            "hi": 0.7647
+          }
+        },
+        "objection_authority": {
+          "support": 18,
+          "precision": {
+            "point": 0.8571,
+            "lo": 0.6364,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.6667,
+            "lo": 0.4375,
+            "hi": 0.875
+          },
+          "f1": {
+            "point": 0.75,
+            "lo": 0.5455,
+            "hi": 0.898
+          }
+        },
+        "objection_status_quo": {
+          "support": 19,
+          "precision": {
+            "point": 0.5833,
+            "lo": 0.2857,
+            "hi": 0.875
+          },
+          "recall": {
+            "point": 0.3684,
+            "lo": 0.1665,
+            "hi": 0.5909
+          },
+          "f1": {
+            "point": 0.4516,
+            "lo": 0.2143,
+            "hi": 0.6486
+          }
+        },
+        "competitor_mention": {
+          "support": 20,
+          "precision": {
+            "point": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.9,
+            "lo": 0.75,
+            "hi": 1.0
+          },
+          "f1": {
+            "point": 0.9474,
+            "lo": 0.8571,
+            "hi": 1.0
+          }
+        },
+        "pricing_question": {
+          "support": 20,
+          "precision": {
+            "point": 0.9375,
+            "lo": 0.8,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.75,
+            "lo": 0.5454,
+            "hi": 0.9375
+          },
+          "f1": {
+            "point": 0.8333,
+            "lo": 0.6667,
+            "hi": 0.9474
+          }
+        },
+        "next_step": {
+          "support": 20,
+          "precision": {
+            "point": 0.8421,
+            "lo": 0.6667,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.8,
+            "lo": 0.6,
+            "hi": 0.9565
+          },
+          "f1": {
+            "point": 0.8205,
+            "lo": 0.6667,
+            "hi": 0.9375
+          }
+        }
+      },
+      "macro_f1": {
+        "point": 0.6934,
+        "lo": 0.6194,
+        "hi": 0.7513
+      },
+      "micro_f1": {
+        "point": 0.7054,
+        "lo": 0.6379,
+        "hi": 0.7685
+      },
+      "ms_per_utterance_batch": 1.027,
+      "chosen_C": {
+        "objection_price": 1.0,
+        "objection_timing": 0.25,
+        "objection_authority": 0.25,
+        "objection_status_quo": 0.25,
+        "competitor_mention": 0.25,
+        "pricing_question": 1.0,
+        "next_step": 1.0
+      }
+    },
+    "lr+all-MiniLM-L6-v2": {
+      "n": 172,
+      "n_boot": 2000,
+      "seed": 0,
+      "per_label": {
+        "objection_price": {
+          "support": 20,
+          "precision": {
+            "point": 0.7059,
+            "lo": 0.4783,
+            "hi": 0.9231
+          },
+          "recall": {
+            "point": 0.6,
+            "lo": 0.375,
+            "hi": 0.8095
+          },
+          "f1": {
+            "point": 0.6486,
+            "lo": 0.4444,
+            "hi": 0.8108
+          }
+        },
+        "objection_timing": {
+          "support": 18,
+          "precision": {
+            "point": 0.6471,
+            "lo": 0.4091,
+            "hi": 0.8667
+          },
+          "recall": {
+            "point": 0.6111,
+            "lo": 0.375,
+            "hi": 0.8333
+          },
+          "f1": {
+            "point": 0.6286,
+            "lo": 0.4118,
+            "hi": 0.7895
+          }
+        },
+        "objection_authority": {
+          "support": 18,
+          "precision": {
+            "point": 0.75,
+            "lo": 0.5212,
+            "hi": 0.9375
+          },
+          "recall": {
+            "point": 0.6667,
+            "lo": 0.4346,
+            "hi": 0.875
+          },
+          "f1": {
+            "point": 0.7059,
+            "lo": 0.4848,
+            "hi": 0.8571
+          }
+        },
+        "objection_status_quo": {
+          "support": 19,
+          "precision": {
+            "point": 0.5909,
+            "lo": 0.3684,
+            "hi": 0.7895
+          },
+          "recall": {
+            "point": 0.6842,
+            "lo": 0.4545,
+            "hi": 0.8824
+          },
+          "f1": {
+            "point": 0.6341,
+            "lo": 0.4348,
+            "hi": 0.7844
+          }
+        },
+        "competitor_mention": {
+          "support": 20,
+          "precision": {
+            "point": 0.95,
+            "lo": 0.8421,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.95,
+            "lo": 0.8333,
+            "hi": 1.0
+          },
+          "f1": {
+            "point": 0.95,
+            "lo": 0.8696,
+            "hi": 1.0
+          }
+        },
+        "pricing_question": {
+          "support": 20,
+          "precision": {
+            "point": 0.9048,
+            "lo": 0.75,
+            "hi": 1.0
+          },
+          "recall": {
+            "point": 0.95,
+            "lo": 0.8333,
+            "hi": 1.0
+          },
+          "f1": {
+            "point": 0.9268,
+            "lo": 0.8148,
+            "hi": 1.0
+          }
+        },
+        "next_step": {
+          "support": 20,
+          "precision": {
+            "point": 0.5455,
+            "lo": 0.3636,
+            "hi": 0.7143
+          },
+          "recall": {
+            "point": 0.9,
+            "lo": 0.7407,
+            "hi": 1.0
+          },
+          "f1": {
+            "point": 0.6792,
+            "lo": 0.5106,
+            "hi": 0.8095
+          }
+        }
+      },
+      "macro_f1": {
+        "point": 0.739,
+        "lo": 0.6758,
+        "hi": 0.7895
+      },
+      "micro_f1": {
+        "point": 0.7402,
+        "lo": 0.6853,
+        "hi": 0.7942
+      },
+      "ms_per_utterance_batch": 4.025,
+      "chosen_C": {
+        "objection_price": 16.0,
+        "objection_timing": 16.0,
+        "objection_authority": 4.0,
+        "objection_status_quo": 0.25,
+        "competitor_mention": 16.0,
+        "pricing_question": 16.0,
+        "next_step": 1.0
+      }
+    }
+  },
+  "paired_macro_f1_differences": {
+    "lr+tfidf minus rules": {
+      "point": 0.1541,
+      "lo": 0.0612,
+      "hi": 0.249,
+      "p_b_better_or_equal": 0.001
+    },
+    "lr+all-MiniLM-L6-v2 minus rules": {
+      "point": 0.1997,
+      "lo": 0.1094,
+      "hi": 0.2912,
+      "p_b_better_or_equal": 0.0
+    }
+  }
+}
