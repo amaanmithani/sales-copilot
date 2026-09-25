@@ -1,5 +1,7 @@
 # sales-copilot
 
+> **Credits.** Built by Amaan Mithani with Claude (Anthropic) as the AI coding assistant.
+
 A live sales-call copilot that runs on a laptop CPU. It transcribes the call as it streams in
 and shows cue cards during the call: price, timing, authority and status-quo objections,
 competitor mentions, pricing questions and agreed next steps. Each card carries a suggested
