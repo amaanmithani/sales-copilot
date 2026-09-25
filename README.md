@@ -30,6 +30,12 @@ cue appearing, and the README reports it.
 released once its last sample would have been captured. If ASR falls behind, chunks queue up
 the way a capture buffer would, and that backlog counts toward latency.
 
+## See it running
+
+![Terminal UI mid-way through replaying the synthetic demo call](docs/img/tui-replay.svg)
+
+A frame of the live terminal UI from a real run of `uv run sales-copilot replay data/audio/call_a.wav --asr tiny`, captured about 57 s into the 88 s call (the pty output was recorded and the frame rebuilt with a terminal emulator; dim styling is lost). The audio is the committed **synthetic** call (macOS TTS), not a real customer. Transcript errors ("Bonnously the Reps tight notes", "perat") and the weak Next step card are the model's real output. The machine was heavily loaded (1-min load average around 70), so the latencies on the cards are higher than the benchmark below.
+
 ## Quick start
 
 ```bash
